@@ -36,7 +36,7 @@ int main(){
 // }
 
 
-// // 2. area of circle is pi/r*r
+// 2. area of circle is pi/r*r
 
 // #include<stdio.h>
 
@@ -50,7 +50,7 @@ int main(){
 // }
 
 
-// // 3. Calculaet percentage of 4 subject where each subject marks is out of 40
+// 3. Calculaet percentage of 4 subject where each subject marks is out of 40
 
 // #include<stdio.h>
 

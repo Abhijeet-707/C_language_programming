@@ -1,4 +1,5 @@
 // if condition
+
 // #include<stdio.h>
 // int main(){
 //     int n;
@@ -19,6 +20,7 @@
 
 
 // if-else condition
+
 // #include<stdio.h>
 // int main(){
 //     int n;
@@ -37,6 +39,7 @@
 
 
 // 1. Take positive integer input and tell if it is divisible by 5 or not
+
 // #include<stdio.h>
 // int main(){
 //     int n;
@@ -55,6 +58,7 @@
 
 
 // 2. Any year is input through the keyboard. Write a program to determine whether the year is a leap year or not. 
+
 // #include<stdio.h>
 // int main(){
 //     int x;
@@ -74,6 +78,7 @@
 
 
 // 3. Take integer input and print the absolute value(mode|-7| = 7) of that integer
+
 // #include<stdio.h>
 // int main(){
 //     int x;
@@ -91,6 +96,7 @@
 
 
 // 4. if a cost price and selling price of an item is input through the keyboard, write a program to determine whether the seller has made profit or incurred loss. Also determine how much profit he made or loss he incurred.
+
 // #include<stdio.h>
 // int main(){
 //     int cp; // cost price
@@ -116,26 +122,27 @@
 
 
 // 5. Given the length and breadth of a rectangle, write a program to find whether the area of the rectangle is greater than its perimeter.
-// #include<stdio.h>
-// int main(){
-//     int l;
-//     printf("Enter a length : ");
-//     scanf("%d",&l);
 
-//     int b;
-//     printf("Enter a breadth : ");
-//     scanf("%d",&b);
+#include<stdio.h>
+int main(){
+    int l;
+    printf("Enter a length : ");
+    scanf("%d",&l);
 
-//     int a = l * b; //area
-//     int p = 2 * (l+b); //perimeter
+    int b;
+    printf("Enter a breadth : ");
+    scanf("%d",&b);
 
-//     if (a>p)
-//     {
-//         printf("Area is greater than perimeter");
-//     }
-//     else{
-//         printf("Area is not greater than perimeter");
-//     }
+    int a = l * b; //area
+    int p = 2 * (l+b); //perimeter
 
-//     return 0;
-// }
+    if (a>p)
+    {
+        printf("Area is greater than perimeter");
+    }
+    else{
+        printf("Area is not greater than perimeter");
+    }
+
+    return 0;
+}
