@@ -20,21 +20,51 @@
 
 // OR second method to solving que 1
 
+// #include<stdio.h>
+// int main(){
+//     int n;
+//     printf("Enter a number : ");
+//     scanf("%d" , &n);
+
+//     if((n % 3 == 0 || n % 5 == 0) && n % 15 != 0 ){ 
+//     // Parentheses are required because && has higher precedence than ||
+//     // Without these ()parentheses, the && condition would be evaluated first,
+//     // changing the intended logic and producing an incorrect result
+
+//         printf("The number is divisible by 3 or 5 but not 15");
+//     }
+//     else{
+//         printf("The number is not matching to the required condition");
+//     }
+//     return 0;
+// }
+
+
+
+// 2. Take 3 positive integers input and print the greatest of them (using nested if-else)
+
 #include<stdio.h>
 int main(){
-    int n;
-    printf("Enter a number : ");
-    scanf("%d" , &n);
+    int a,b,c;
+    printf("Enter a 1st Number : ");
+    scanf("%d",&a);
+    printf("Enter a 2nd Number : ");
+    scanf("%d",&b);
+    printf("Enter a 3rd Number : ");
+    scanf("%d",&c);
 
-    if((n % 3 == 0 || n % 5 == 0) && n % 15 != 0 ){ 
-    // Parentheses are required because && has higher precedence than ||
-    // Without these ()parentheses, the && condition would be evaluated first,
-    // changing the intended logic and producing an incorrect result
-
-        printf("The number is divisible by 3 or 5 but not 15");
+    if(a>b){
+        if(a>c)
+            printf("%d is greatest",a);
+        else // a < c  ->  b < a < c  
+            printf("%d is greatest",c); 
+        // here,bracket is not required because.. if and else containing only one statement
     }
-    else{
-        printf("The number is not matching to the required condition");
+    else{ // b > a  ->  now a is not greatest
+        if(b>c)
+            printf("%d is greatest",b);
+        else // b < c  ->  a < b < c
+            printf("%d is greatest",c);
     }
     return 0;
 }
